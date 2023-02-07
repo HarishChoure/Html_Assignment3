@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+  <head lang="en">
+    <title>Assignment 3</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      tr,
+      .lang {
+        display: flex;
+      }
+
+      .gender {
+        height: 110px;
+      }
+      @media (max-width: 576px) {
+        tr,
+        .lang {
+          flex-direction: column;
+          margin: 20px 0px;
+        }
+
+        .gender {
+          height: 170px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <table>
+      <tbody>
+        <tr height="75px">
+          <td width="230px">
+            <lable for="fname">First Name:</lable><br />
+            <input type="text" id=" fname" />
+          </td>
+          <td>
+            <lable f="lname">Last Name:</lable><br />
+            <input type="text" id="lname" />
+          </td>
+        </tr>
+        <tr height="75px">
+          <td width="230px">
+            <lable>Email:</lable><br />
+            <input type="email" />
+          </td>
+          <td>
+            <lable>Contact Number:</lable><br />
+            <input type="number" />
+          </td>
+        </tr>
+        <tr height="75px">
+          <td width="230px">
+            <lable>Username:</lable><br />
+            <input type="text" />
+          </td>
+          <td>
+            <lable>Password:</lable><br />
+            <input type="password" />
+          </td>
+        </tr>
+        <tr class="gender">
+          <td width="230px">
+            <label>Address:</label><br />
+            <textarea name="message" rows="4" cols="20"></textarea>
+          </td>
+          <td>
+            <label>Gender :</label><br />
+            <span class="lang">
+              <span>
+                <input type="radio" id="male" name="gender" />
+                <label for="male">Male</label>
+              </span>
+              <span>
+                <input type="radio" id="female" name="gender" />
+                <label for="female">Female</label>
+              </span>
+            </span>
+          </td>
+        </tr>
+        <tr height="75px">
+          <td width="230px">
+            <lable>Qualification:</lable><br />
+            <input list="Qualification" placeholder="--select--" />
+            <datalist id="Qualification">
+              <option value="XII"></option>
+              <option value="X"></option>
+              <option value="DIPLOMA"></option>
+              <option value="BACHELOR"></option>
+            </datalist>
+          </td>
+          <td>
+            <lable>Experience:</lable><br />
+            <input list="Experience" placeholder="--select--" />
+            <datalist id="Experience">
+              <option value="1"></option>
+              <option value="2"></option>
+              <option value="3"></option>
+              <option value="4"></option>
+            </datalist>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <span class="lang">
+      <label>Coding Language</label>
+      <span>
+        <input type="radio" id="C/C++" name="Coding Language" value="C/C++" />
+        <label for="C/C++">C/C++</label>
+      </span>
+      <span>
+        <input type="radio" id="Java" name="Coding Language" value="Java" />
+        <label for="Java">Java</label>
+      </span>
+      <span>
+        <input type="radio" id="C#" name="Coding Language" value="C#" />
+        <label for="C#">C#</label>
+      </span>
+      <span>
+        <input type="radio" id="PHP" name="Coding Language" value="PHP" />
+        <label for="PHP">PHP</label>
+      </span>
+      <span>
+        <input type="radio" id="Python" name="Coding Language" value="Python" />
+        <label for="Python">Python</label>
+      </span>
+    </span>
+    <br /><br />
+    <input type="submit" value="submit" />
+  </body>
+</html>
